@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Biodata</title>
 </head>
 <body>
     <h1>BIODATA SISWA</h1>
-
-    <form action="Form.html" method="post">
+    
+    <form action="index.php" method="post">
         <p>SILAHKAN ISI DAFTAR BERIKUT! </p>
         <label>NISN : </label> <input type="number" name="nisn"> <br>
-        <label>NAMA LENGKAP : </label><input type="text" name="nama lengkap"> <br>
-        <label>TEMPAT LAHIR : </label> <input type="text" name="tempat lahir"> <br>
+        <label>NAMA LENGKAP : </label><input type="text" name="namaLengkap"> <br>
+        <label>TEMPAT LAHIR : </label> <input type="text" name="tempatLahir"> <br>
         <p>
             <label>TANGGAL LAHIR :</label>
             <input type="date" name="tanggal">
@@ -39,11 +40,11 @@
             <br />
             <textarea name="ALAMAT" cols= "50" rows="10"></textarea>
         </p>
-        <label>ASAL SEKOLAH : </label> <input type="text" name="asal sekolah"
-        placeholder="NAMA SEKOLAH ANDA"> <br>
+        <label>ASAL SEKOLAH : </label> <input type="text" name="AsalSekolah"
+        placeholder="NamaSekolahAnda"> <br>
         <p>
             <label>PILIHAN JURUSAN 1 :</label>
-            <select name="Jurusan" id="">
+            <select name="Jurusan1" id="">
                 <option value=".">Silahkan pilih jurusan anda</option>
                 <option value="MPLB">Manajemen Perkantoran & Layanan Bisnis </option>
                 <option value="AKL">Akuntansi Keuangan Lembaga</option>
@@ -58,8 +59,8 @@
             </select>
         </p>
         <p>
-            <label>PILIHAN JURUSSAN 2 :</label>
-            <select name="Jurusan" id="">
+            <label>PILIHAN JURUSAN 2 :</label>
+            <select name="Jurusan2" id="">
                 <option value=".">Silahkan pilih jurusan anda</option>
                 <option value="MPLB">Manajemen Perkantoran & Layanan Bisnis </option>
                 <option value="AKL">Akuntansi Keuangan Lembaga</option>
@@ -75,7 +76,7 @@
         </p>
         <p>
             <label>PILLIHAN JURUSAN 3 :</label>
-            <select name="Jurusan" id="">
+            <select name="Jurusan3" id="">
                 <option value=".">Silahkan pilih jurusan anda</option>
                 <option value="MPLB">Manajemen Perkantoran & Layanan Bisnis </option>
                 <option value="AKL">Akuntansi Keuangan Lembaga</option>
@@ -90,18 +91,18 @@
             </select>
         </p>
         <p>
-            <Label>EKSTRAKULIKULER :</Label>
-            <input type="checkbox" name="OSIS">Organisasi Siswa Intra Sekolah (OSIS)
-            <input type="checkbox" name="GDS">Gerakan Disiplin Siswa
-            <input type="checkbox" name="PASKIB">Paskibraka <br>
-            <input type="checkbox" name="REMAS">Remaja Masjid Al-Kautsar
-            <input type="checkbox" name="ENCASA">English Club Esemkasa
-            <input type="checkbox" name="PMR">Palang Merah Remaja <br>
-            <input type="checkbox" name="FUTSAL">Futsal
-            <input type="checkbox" name="BASKET">Basket
-            <input type="checkbox" name="VOLY">Voly <br>
-            <input type="checkbox" name="TEATER">Teater Kusuma
-            <input type="checkbox" name="TARI">Tari
+             EKSTRAKULIKULER :<Label for="ekstra" name="eks"> </Label>
+            <input type="checkbox" value="OSIS"name="eskul[]">Organisasi Siswa Intra Sekolah (OSIS)
+            <input type="checkbox" value="GDS"name="eskul[]">Gerakan Disiplin Siswa
+            <input type="checkbox" value="Paskibra"name="eskul[]">Paskibraka <br>
+            <input type="checkbox" value="Remas"name="eskul[]">Remaja Masjid Al-Kautsar
+            <input type="checkbox" value="EC"name="eskul[]">English Club Esemkasa
+            <input type="checkbox" value="PMR"name="eskul[]">Palang Merah Remaja <br>
+            <input type="checkbox" value="FS"name="eskul[]">Futsal
+            <input type="checkbox" value="Basket"name="eskul[]">Basket
+            <input type="checkbox" value="Volly"name="eskul[]">Voly <br>
+            <input type="checkbox" value="TK"name="eskul[]">Teater Kusuma
+            <input type="checkbox" value="Tari"name="eskul[]">Tari
         </p>
         <p>
             <input type="submit" name="submit" value="Daftar">
